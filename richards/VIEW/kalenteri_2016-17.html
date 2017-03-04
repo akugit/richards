@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rikun kilpailukalenteri 2016-2017</title>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="description" content="Richard's Dart" />
+
+<link rel="stylesheet"    href="<?=$CSS_PATH?><?=$CSS_FILE?>" type="text/css" />
+<link rel="shortcut icon" href="favicon.ico" />
+
+<script type="text/javascript" src="<?=$JS_PATH?><?=$JS_FILE?>"></script>
+</head>
+
+<body class="bgimage">
+<!--            -->
+<!-- NAVIGATION -->
+<!--            -->
+<div class="w100p txtcenter">
+<img class="logoRtxt" src="<?=$IMAGE_PATH?>text_richards.gif" alt="Richard's Dart">
+<nav>
+<table class="w60p horcenter fixtable">
+<colgroup><col class="w20p"><col class="w20p"><col class="w20p"><col class="w20p"><col class="w20p"></colgroup>
+<tr>
+<th class="navi b1" onClick="javascript:nextPage('index');return false;">Etusivu</th>
+<!--th class="navi b1" onClick="javascript:nextPage('kalenteri');return false;">Kalenteri</th-->  
+<th class="navi b1" onClick="javascript:nextPage('liiga');return false;">SM-liiga</th>
+<th class="navi b1" onClick="javascript:nextPage('piiri');return false;">Piirisarja</th>
+<th class="navi b1" onClick="javascript:nextPage('tulos');return false;">Tuloksia</th>
+<th class="navi b1" onClick="javascript:nextPage('historia');return false;">Historia</th></tr>
+</table></nav>
+<form name="page" id="page" action="<?=$PROTOCOL_HOST?><?=$PROG_NAME?>" method="POST">
+<input type="hidden" name="next" id="next" />
+<input type="hidden" name="team" id="team" />
+<input type="hidden" name="round" id="round" />
+<!--div><?=$debugs?></div-->
+</form>
+<br><br>
+</div>
+<!--            -->
+<!--  CONTENTS  -->
+<!--            -->
+<div class="w100p txtcenter">
+<span class="font200 txtblue txtbold">KILPAILUKALENTERI </span>
+<span class="font200 txtblue txtbold">2016 - </span>
+<span class="font200 txtblue txtbold">2017</span>
+<br><br>
+<table class="horcenter w75p fixtable"><!-- date and link to SDL -->
+<tr>
+<td class="txtbold txtleft">T&auml;n&auml;&auml;n on 
+<script language="JavaScript">
+var today = new Date()
+var Month = today.getMonth()+1
+var weekDays = ["sunnuntai","maanantai","tiistai","keskiviikko","torstai","perjantai","lauantai"]
+var weekDay = weekDays[ today.getDay()]
+var weekDate = today.getDate()
+document.write("<span class='txtbold txtblue'>" + weekDay + "&nbsp;" + weekDate +
+"." + Month + "." + today.getFullYear() + "</span>")
+</script></td>
+<td class="txtright txtbold keepgreen">
+ <a href="http://www.darts.fi/page.asp?menu={86016317-9FD0-4C1C-AB55-FB19DFC34F72}&url=/kalenteri/default.asp" 
+    target="_blank">SDL:n kilpailukalenteri</a></td></tr>
+</table>
+<!--                    -->
+<!--     UPPER PART     -->
+<!-- default AUG to DEC -->
+<!--                    -->
+<table class="horcenter w75p fixtable b1">
+<colgroup><col class="w15p" /><col class="w15p" /><col /></colgroup>
+<tr>
+ <td colspan="3" class="bgsyksy b1 h60"><span class="font175 txtbold txtblue">&nbsp;Syksy 2016: </span><span class="txtbold">poimintoja, muutokset mahdollisia</span></td></tr>
+
+<tr class="bgliiga">
+ <th class="b1 h40"> 30.6./14.8.</th>
+ <th class="b1">&nbsp;</th>
+ <td class="b1">
+ 	 <span class="txtbold">&nbsp;<a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('liiga');return false;">SM-LIIGA</a></span>
+ 	 <span class="font80"> ilmoittautuminen p&auml;&auml;ttyy / Miesten II divisioona &nbsp; 30.6. (200&euro;) / 14.8. (240 &euro;)</span></td></tr>
+<tr class="bgpiiri">
+ <th class="b1 h40"> 7.8./31.8.</th>
+ <th class="b1">&nbsp;</th>
+ <td class="b1">
+ 	 <span class="txtbold">&nbsp;<a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('piiri');return false;">PIIRISARJA</a> SDLep</span>
+ 	 <span class="font80"> ilmoittautuminen p&auml;&auml;ttyy 7.8. (80&euro;)</span></td></tr>
+
+<tr class="bgliiga">
+ <th class="b1 h40"> 3.9.</th>
+ <th class="b1">klo 11:30</th>
+ <td class="b1">
+ 	 <span class="txtbold">&nbsp;<a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('liiga');return false;">SM-LIIGA</a> (1)</span>
+ 	 <span class="font80">&nbsp;</span></td></tr>
+ 	 
+<tr class="bgpiiriM">
+ <th class="b1 h40"> 24.9</th>
+ <th class="b1">&nbsp;</th>
+ <td class="b1">
+ 	 <span class="txtbold">&nbsp;<a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('liiga');return false;">SDLEP</a>:n PIIRIMESTARUUDET </span>
+ 	 <span class="font80">NS, MS, NP, MP</span></td></tr>
+
+<tr class="bgpiiri">
+ <th class="b1 h40"> xx.9</th>
+ <th class="b1">&nbsp;</th>
+ <td class="b1">
+ 	 <span class="txtbold">&nbsp;<a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('piiri');return false;">PIIRISARJA</a> (1)</span>
+ 	 <span class="font80">&nbsp;</span></td></tr>
+
+<tr class="bgliiga">
+ <th class="b1 h40"> 8.10.</th>
+ <th class="b1">klo 11:30</th>
+ <td class="b1">
+ 	 <span class="txtbold">&nbsp;<a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('liiga');return false;">SM-LIIGA</a> (2)</span>
+ 	 <span class="font80">&nbsp;</span></td></tr>
+<tr class="bgpiiri">
+ <th class="b1 h40"> xx.10</th>
+ <th class="b1">&nbsp;</th>
+ <td class="b1">
+ 	 <span class="txtbold">&nbsp;<a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('piiri');return false;">PIIRISARJA</a> (2)</span>
+ 	 <span class="font80">&nbsp;</span></td></tr>
+ 	 
+<tr class="bgliiga">
+ <th class="b1 h40"> 12.11.</th>
+ <th class="b1">klo 11:30</th>
+ <td class="b1">
+ 	 <span class="txtbold">&nbsp;<a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('liiga');return false;">SM-LIIGA</a> (3)</span>
+ 	 <span class="font80">&nbsp;</span></td></tr>
+<tr class="bgpiiri">
+ <th class="b1 h40"> xx.11</th>
+ <th class="b1">&nbsp;</th>
+ <td class="b1">
+ 	 <span class="txtbold">&nbsp;<a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('piiri');return false;">PIIRISARJA</a> (3)</span>
+ 	 <span class="font80">&nbsp;</span></td></tr>
+ 
+<tr class="bgliiga">
+ <th class="b1 h40"> 10.12.</th>
+ <th class="b1">klo 11:30</th>
+ <td class="b1">
+ 	 <span class="txtbold">&nbsp;<a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('liiga');return false;">SM-LIIGA</a> (4)</span>
+ 	 <span class="font80">&nbsp;</span></td></tr>
+<tr>
+ <td colspan="3">
+	 <span class="font80">Piirisarjan p&auml;iv&auml;m&auml;&auml;r&auml;n&auml; on kunkin kierroksen viimeinen pelip&auml;iv&auml;</span></td></tr>
+</table>
+<!--                    -->
+<!--     LOWER PART     -->
+<!-- default JAN to JUL -->
+<!--                    -->
+<table class="horcenter w75p fixtable b1">
+<colgroup><col class="w15p" /><col class="w15p" /><col /></colgroup>
+<tr>
+ <td colspan="3" class="bgkevat b1 h60"><span class="font175 txtbold txtblue">&nbsp;Kevät 2017: </span><span class="txtbold">poimintoja, muutokset mahdollisia</span></td></tr>
+
+<tr class="bgINTL">
+ <th class="b1 h40"> x.-xx.1.</th>
+ <th class="b1">&nbsp;</th>
+ <td class="b1">
+ 	 <span class="txtbold">&nbsp;<a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('liiga');return false;"></a>Lakeside World Professional Championships (BDO)</span>
+ 	 <span class="font80">Eurosport</span></td></tr>
+ 	 
+<tr class="bgSDL">
+ <th class="b1 h40"> 7.-8.1.</th>
+ <th class="b1">klo 10:30</th>
+ <td class="b1">
+ 	 <span class="txtbold">&nbsp;<a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('liiga');return false;"></a>SUOMEN CUP</span>
+ 	 <span class="font80">&nbsp;</span></td></tr>
+
+<tr class="bgpiiri">
+ <th class="b1 h40"> xx.1.</th>
+ <th class="b1">&nbsp;</th>
+ <td class="b1">
+ 	 <span class="txtbold">&nbsp;<a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('piiri');return false;">PIIRISARJA</a> (4)</span>
+ 	 <span class="font80">&nbsp;</span></td></tr>
+ 
+<tr class="bgliiga">
+ <th class="b1 h40"> 21.1.</th>
+ <th class="b1">klo 11:30</th>
+ <td class="b1">
+ 	 <span class="txtbold">&nbsp;<a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('liiga');return false;">SM-LIIGA</a> (5)</span>
+ 	 <span class="font80">&nbsp;</span></td></tr>
+
+<tr class="bgpiiri">
+ <th class="b1 h40"> xx.2.</th>
+ <th class="b1">&nbsp;</th>
+ <td class="b1">
+ 	 <span class="txtbold">&nbsp;<a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('piiri');return false;">PIIRISARJA</a> (5)</span>
+ 	 <span class="font80">&nbsp;</span></td></tr>
+ 
+<tr class="bgliiga">
+ <th class="b1 h40"> 18.2.</th>
+ <th class="b1">klo 11:30</th>
+ <td class="b1">
+ 	 <span class="txtbold">&nbsp;<a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('liiga');return false;">SM-LIIGA</a> (6)</span>
+ 	 <span class="font80">&nbsp;</span></td></tr>
+<tr class="bgliiga">
+ <th class="b1 h40"> 18.3.</th>
+ <th class="b1">klo 11:30</th>
+ <td class="b1">
+ 	 <span class="txtbold">&nbsp;<a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('liiga');return false;">SM-LIIGA</a> (7)</span>
+ 	 <span class="font80">&nbsp;</span></td></tr>
+
+<tr class="bgpiiri">
+ <th class="b1 h40"> xx.3</th>
+ <th class="b1">&nbsp;</th>
+ <td class="b1">
+ 	 <span class="txtbold">&nbsp;<a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('piiri');return false;">PIIRISARJA</a> (6)</span>
+ 	 <span class="font80">&nbsp;</span></td></tr>
+<tr class="bgpiiri">
+ <th class="b1 h40"> xx.3</th>
+ <th class="b1">&nbsp;</th>
+ <td class="b1">
+ 	 <span class="txtbold">&nbsp;<a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('piiri');return false;">PIIRISARJA</a> (7)</span>
+ 	 <span class="font80">&nbsp;</span></td></tr>
+
+
+<tr class="bgmuut">
+ <th class="b1 h40"> 25.2.</th>
+ <th class="b1">klo 10:30</th>
+ <td class="b1">
+ 	 <span class="txtbold">&nbsp;<a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('piiri');return false;"></a> KALLIO CUP</span>
+ 	 <span class="font80">&nbsp;</span></td></tr>
+
+ 	 
+<tr class="bgpiiriM">
+ <th class="b1 h40"> xx.-xx.3.</th>
+ <th class="b1">&nbsp;</th>
+ <td class="b1">
+ 	 <span class="txtbold">&nbsp;<a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('liiga');return false;">SDLEP</a>:n B- JA SEKAMESTARUUDET </span>
+ 	 <span class="font80">NS, MS, NP, MP, SJ</span></td></tr>
+
+<tr class="bgriku">
+ <th class="b1 h40"> xx.3.</th>
+ <th class="b1">&nbsp;</th>
+ <td class="b1">
+ 	 <span class="txtbold">&nbsp;<a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('piiri');return false;"></a> RIKUN VUOSIKOKOUS ja MESTARUUSKISAT ANKUSSA</span>
+ 	 <span class="font80"><br>&nbsp;&nbsp;&nbsp;vain Rikun j&auml;senille</span></td></tr>
+
+<tr class="bgliiga">
+ <th class="b1 h40"> 8.4.</th>
+ <th class="b1">klo 11:30</th>
+ <td class="b1">
+ 	 <span class="txtbold">&nbsp;<a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('liiga');return false;">SM-LIIGA</a> (8) ja PLAY-OFFS ESIKIERROS</span>
+ 	 <span class="font80">&nbsp;</span></td></tr>
+<tr class="bgliiga">
+ <th class="b1 h40"> 29.4.</th>
+ <th class="b1">klo 11:30</th>
+ <td class="b1">
+ 	 <span class="txtbold">&nbsp;<a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('liiga');return false;">SM-LIIGA</a> PlAY-OFFS ja KARSINNAT</span>
+ 	 <span class="font80">&nbsp;</span></td></tr>
+
+<tr class="bgSDL">
+ <th class="b1 h40"> xx.-xx.5.</th>
+ <th class="b1">&nbsp;</th>
+ <td class="b1">
+ 	 <span class="txtbold">&nbsp;<a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('liiga');return false;"></a>36. FINNISH OPEN</span>
+ 	 <span class="font80">&nbsp;</span></td></tr>
+<tr>
+ <td colspan="3">
+	 <span class="font80">Piirisarjan p&auml;iv&auml;m&auml;&auml;r&auml;n&auml; on kunkin kierroksen viimeinen pelip&auml;iv&auml;</span></td></tr>
+
+</table>
+</div>
+
+<br><br>
+<!--               -->
+<!--  PAGE BOTTOM  -->
+<!--               -->
+<div class="txtcenter">
+<a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('index');return false;" title="Rikun etusivulle">
+ <img class="dartsLeft" src="<?=$DARTS_LEFT?>" alt="Rikun etusivulle" /></a>
+</div>
+<br>
+<div><?=$msg?></div>
+</body>
+</html>
+<?php return ?>

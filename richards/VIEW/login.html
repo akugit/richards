@@ -1,0 +1,9 @@
+<html><head><title>RIKU login</title>
+<?php?>
+ 	   <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">	   <meta http-equiv="Content-Language" content="fi-fi">
+<link rel='stylesheet' type='text/css' href='<?=$CONFIG->protocol_host?>/richards/COMMON/CSS/richards.css' />	   <script language=javascript><!--	    function sessres { 		   var res = screen.width+"x"+screen.height;alert(res);	       return false; -->	   </script>	   </head>	                 <body>       <center>       <a target='_blank' href='http://192.168.0.10:8880/richards/index.php' style='link:#ff4500; vlink:#ff4500'>       <IMG src='COMMON/IMAGES/logobig.gif' border='0' alt='richards logo'/>       </a>
+              <!--form name='getme' action='" . $PROTOCOL_HOST . "/login2.php' method='POST' onSubmit='javascript:sessres();'>
+       -->
+       <form name='getme' action='/login.php' method='POST' onSubmit='javascript:sessres();'>
+        <h2>Dashboard</h2>       <h4>username</h4>       <input type='text' name='uname' size='60'>       <h4>password</h4>       <input type='password' name='upass' size='60'>       <br>       <br><input type='submit' name='action' value='login'>       <br><h3><?=$message?></h3>     <input type='hidden' name='res' value='none'/>//     <!--script language='javascript'>getme.getElementById('res').value='screen.width+"x"+screen.height';</script-->       </form>       <br>       <a target='_blank' href='" . $PROTOCOL_HOST . "/des2F/admin/senduserinfo.php'>Forgot your password?</a>       </center>       </body>       </html>
+<?php return ?>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lomakkeita</title>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="description" content="Richard's Dart" />
+
+<link rel="stylesheet"    href="<?=$CSS_PATH?><?=$CSS_FILE?>" type="text/css" />
+<link rel="shortcut icon" href="favicon.ico" />
+
+<script type="text/javascript" src="<?=$JS_PATH?><?=$JS_FILE?>"></script>
+</head>
+
+<body class="bgimage">
+<!--            -->
+<!-- NAVIGATION -->
+<!--            -->
+<div class="w100p txtcenter">
+<img class="logoRtxt" src="<?=$IMAGE_PATH?>rd_logo.gif" alt="Richard's Dart">
+<nav>
+<table class="w60p horcenter fixtable">
+<colgroup><col class="w20p"><col class="w20p"><col class="w20p"><col class="w20p"><col class="w20p"></colgroup>
+<tr>
+<th class="navi b1" onClick="javascript:nextPage('index');return false;">Etusivu</th> 
+<th class="navi b1" onClick="javascript:nextPage('kalenteri');return false;">Kalenteri</th>  
+<th class="navi b1" onClick="javascript:nextPage('liiga');return false;">SM-liiga</th>
+<th class="navi b1" onClick="javascript:nextPage('piiri');return false;">Piirisarja</th>
+<!--th class="navi b1" onClick="javascript:nextPage('tulos');return false;">Tuloksia</th-->
+<th class="navi b1" onClick="javascript:nextPage('historia');return false;">Historia</th></tr>
+</table></nav>
+<form name="page" id="page" action="<?=$PROTOCOL_HOST?><?=$PROG_NAME?>" method="POST">
+<input type="hidden" name="next" id="next" />
+<input type="hidden" name="team" id="team" />
+<input type="hidden" name="round" id="round" />
+<!--div><?=$debugs?></div-->
+</form>
+<br><br>
+</div>
+<!--            -->
+<!--  CONTENTS  -->
+<!--            -->
+<div class="w100p txtcenter">
+<span class="font200 txtgreen txtbold">Pöytäkirjat&nbsp;&nbsp;Lomakkeet</span>
+<!--span class="font200 txtblue txtbold">2016 - </span>
+<span class="font200 txtblue txtbold">2017</span-->
+<br><br>
+<table class="horcenter w75p fixtable bcollapse">
+<tr>
+	<td class="w50p aligntop b1"><!-- LEFT SIDE -- EMPTY FORMS -->
+		<table class="w100p fixtable bcollapse">
+			<tr><th class="h50 txtgreen">Tyhj&auml;t</th></tr>
+			<tr><td>
+				<span class="txtbold keepblue">
+					<a href="http://www.darts.fi/docs/File/SM-Liiga/Liiga%202014%20-%202015/ottelupoytakirja_8_joukkueen_lohkot_2012.xls" 
+					   target="_blank">SM-liiga 8:n joukkueen lohkot</a></span><br>
+				<span class="font70"> Lähde: www.darts.fi</span></td></tr>
+			<tr><td>
+				<span class="txtbold keepblue">
+					<a href="https://docs.google.com/viewer?docex=1&url=http://www.darts.fi/docs/File/SM-Liiga/Liiga%202012%20-%202013/Liigan%20ottelupk%203j.xls" 
+					   target="_blank">SM-liiga 9:n joukkueen lohkot</a></span><br>
+				<span class="font70"> Lähde: www.darts.fi</span></td></tr>
+			<tr><td>
+				<span class="txtbold keepblue">
+					<a href="" target="_blank"></a></span>
+				<span class="font70">&nbsp;</span></td></tr>
+			<tr><td>
+				<span class="txtbold keepblue">
+					<a href="https://docs.google.com/viewer?docex=1&url=http://www.darts.fi/docs/File/SM-Liiga/Liiga%202012%20-%202013/Liigan%20ottelupk%203j.xls" 
+					   target="_blank">SM-liiga naiset: pariton m&auml;&auml;r&auml; joukkueita</a></span><br>
+				<span class="font70"> L&auml;hde: www.darts.fi</span></td></tr>
+			<tr><td>
+				<span class="txtbold keepblue">
+					<a href="https://docs.google.com/viewer?docex=1&url=http://www.darts.fi/docs/File/SM-Liiga/Ottelupoytakirja_naisetuusiykkonen.xls" 
+					   target="_blank">SM-liiga naiset: parillinen m&auml;&auml;r&auml; joukkueita</a></span><br>
+				<span class="font70"> Lähde: www.darts.fi</span></td></tr>
+			<tr><td>
+				<span class="txtbold keepblue">
+					<a href="" target="_blank"></a></span>
+				<span class="font70">&nbsp;</span></td></tr>
+			<tr><td>
+				<span class="txtbold keepblue">
+					<a href="" target="_blank"></a></span>
+				<span class="font70">&nbsp;</span></td></tr>
+			<tr><td>
+				<span class="txtbold keepblue">
+					<a href="https://docs.google.com/viewer?docex=1&url=http://sivut.sdlep.net/files/Piirisarja_pytkirjalomake_2016-17.xls"
+					   target="_blank">Piirisarjan p&ouml;yt&auml;kirja</a></span><br>
+				<span class="font70"> Lähde: sivut.sdlep.net</span></td></tr>
+			<tr><td>
+				<span class="txtbold keepblue">
+					<a href="" target="_blank"></a></span>
+				<span class="font70">&nbsp;</span></td></tr>
+			<tr><td>
+				<span class="txtbold keepblue">
+					<a href="<?=$PDF_PATH?>RD_kirjauslomake.pdf" 
+					   target="_blank">Rikun kirjauslomake</a></span><br>
+				<span class="font70">(pdf) &copy; Harri Mäkelä</span></td></tr>
+			<tr><td>
+				<span class="txtbold keepblue">
+					<a href="" target="_blank"></a></span>
+				<span class="font70">&nbsp;</span></td></tr>
+		</table>
+	</td>
+	<td class="w50p aligntop b1"><!-- RIGHT SIDE -- PRE-FILLED FORMS -->
+		<table class="w100p fixtable bcollapse">
+			<tr><th class="h50 txtgreen">Esitäytetyt</th></tr>
+			<tr><td>
+				<span class="txtbold keepblue">
+					<a href="<?=$XLS_PATH?>SDL_EP_RD_Piirisarja_ottelupoytakirja_2015-2016.xls" 
+					   target="_blank">Piirisarja Lohko B</a></span>
+				<span class="font70"></span></td></tr>
+			<tr><td>
+				<span class="txtbold keepblue">
+					<a href="" target="_blank"></a></span>
+				<span class="font70">&nbsp;</span></td></tr>
+			<tr><td>
+				<span class="txtbold keepblue">
+					<a href="" target="_blank"></a></span>
+				<span class="font70">&nbsp;</span></td></tr>
+			<tr><td>
+				<span class="txtbold keepblue">
+					<a href="" target="_blank"></a></span>
+				<span class="font70">&nbsp;</span></td></tr>
+			<tr><td>
+				<span class="txtbold keepblue">
+					<a href="" target="_blank"></a></span>
+				<span class="font70">&nbsp;</span></td></tr>
+		</table>
+	</td></tr>
+</table>
+
+</div>
+
+<br><br>
+<!--               -->
+<!--  PAGE BOTTOM  -->
+<!--               -->
+<div class="txtcenter">
+<a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('index');return false;">
+ <img class="dartsLeft" src="<?=$DARTS_LEFT?>" alt="Rikun etusivulle" /></a>
+</div>
+<br>
+<div><?=$msg?></div>
+</body>
+</html>
+<?php return ?>

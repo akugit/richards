@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<title>Richard's Dart - Somewhat Official Web Pages</title>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="description" content="Richard's Dart" />
+
+<link rel="stylesheet"    href="<?=$CSS_PATH?><?=$CSS_FILE?>" type="text/css" />
+<link rel="shortcut icon" href="favicon.ico" />
+
+<script type="text/javascript" src="<?=$JS_PATH?><?=$JS_FILE?>"></script>
+</head>
+<!-- body with background -->
+<body class="bgimage">
+
+<!--form name="page" id="page" action="<?=$PROTOCOL_HOST?><?=$VERSION_PATH?><?=$PROG_NAME?>" method="POST"-->
+<form name="page" id="page" action="<?=$PROTOCOL_HOST?><?=$PROG_NAME?>" method="POST">
+<input type="hidden" name="next" id="next" />
+<input type="hidden" name="team" id="team" />
+<input type="hidden" name="round" id="round" />
+<!--div><?=$debugs?></div-->
+</form>
+
+<div>
+<br>
+<!-- index page upper part -->
+<table class="horcenter w90p h500 b1"><!-- 1 row 2 columns -->
+<tr>
+<!-- left side - Richard's logo -->
+ <th class="h500p w50p b1"><!--td valign=center align=center width="50%" rowspan=11-->
+	<img class="logoRiku b1" src="<?=$IMAGE_PATH?>logo_richards.gif" alt="Richard's Dart" /></th>
+
+<!-- right side - info & menu -->
+ <td class="h100p b1">
+	<table class="horcenter w90p h100p">
+	<tr class="h2p">
+		 <th class="w20p">&nbsp;</th>
+		 <th class="w20p">&nbsp;</th><!--img src="<?=$IMAGE_PATH?>dartoik.gif" alt="*" name="dartx"></th-->
+		 <td>&nbsp;</td></tr>
+	<tr class="b1">
+		<th class="b1" colspan="10">
+			<span class="txtgreen font250">VIIKKOKISAT</span><br />
+			<span class="font150">Nummelassa</span><br /><br/>
+			<span>tiistaisin klo 18:30</span><br />
+			<span>Pub Pilvenhattara</span><br /><br />
+			<span>501 / 3 -- tuplacup</span></br>
+			<span class="font70">liiton pisteet jaossa</span>
+			
+		</th></tr>
+	<tr class="h2p">
+		 <th class="w20p">&nbsp;</th>
+		 <th class="w20p">&nbsp;</th><!--img src="<?=$IMAGE_PATH?>dartoik.gif" alt="*" name="dart0"></th-->
+		 <td>&nbsp;</td></tr>
+	<tr class="h4p">
+		 <th class="w20p">&nbsp;</th>
+		 <th class="w20p"><img src="<?=$IMAGE_PATH?>dartoik.gif" alt="*" name="dart1"></th>
+		 <td>
+		 <!--a href="kalenteri_2016-17.html" --> 
+		  <a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('kalenteri');return false;"
+											 onMouseOver="img_act('dart1');return true;"
+											 onMouseOut="img_inact('dart1');return true;">
+		  <span class="txtbold txtblue">Kilpailukalenteri </span></a>&nbsp;
+		 <span class="font70 txtgreen">(Event Calendar)</span>
+		 </td></tr>
+	<tr class="h4p">
+		 <th class="w20p">&nbsp;</th>
+		 <th class="w20p"><img src="<?=$IMAGE_PATH?>dartoik.gif" alt="*" name="dart2"></th>
+		 <td>
+		  <!--a href="rdliiga.html"-->
+		  <a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('liiga');return false;"
+											 onMouseOver="img_act('dart2');return true;"
+											 onMouseOut="img_inact('dart2');return true;">
+		  <span class="txtbold txtblue">SM-liiga </span></a>&nbsp;
+		 <span class="font70 txtgreen">(National League)</span>
+		 </td></tr>
+	<tr class="h4p">
+		 <th class="w20p">&nbsp;</th>
+		 <th class="w20p"><img src="<?=$IMAGE_PATH?>dartoik.gif" alt="*" name="dart3"></th>
+		 <td>
+		  <!--a href="rdpiiri.html"-->
+		  <a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('piiri');return false;"
+											 onMouseOver="img_act('dart3');return true;"
+											 onMouseOut="img_inact('dart3');return true;">
+		  <span class="txtbold txtblue">Piirisarja </span></a>&nbsp;
+		 <span class="font70 txtgreen">(District League)</span>
+		 </td></tr>
+	<tr class="h4p">
+		 <th class="w20p">&nbsp;</th>
+		 <th class="w20p"><img src="<?=$IMAGE_PATH?>dartoik.gif" alt="*" name="dart4"></th>
+		 <td>
+		  <!--a href="tulokset.html"-->
+		 <a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('tulos');return false;"
+											onMouseOver="img_act('dart4');return true;"
+											onMouseOut="img_inact('dart4');return true;">
+		 <span class="txtbold txtblue">Kilpailutuloksia </span></a>&nbsp;
+		 <span class="font70 txtgreen">(Results)</span>
+		 </td></tr>
+	<tr class="h4p">
+		 <th class="w20p">&nbsp;</th>
+		 <th class="w20p"><img src="<?=$IMAGE_PATH?>dartoik.gif" alt="*" name="dart5"></th>
+		 <td>
+		 	<a href="<?=$PDF_PATH?>ranking.pdf" target="_blank" 
+		 		onMouseOver="img_act('dart5');return true;" onMouseOut="img_inact('dart5');return true;">
+		  <span class="txtbold txtblue">Ranking </span></a>&nbsp;
+		 <span class="font70 txtgreen">(Ranking)</span>
+		 </td></tr>
+	<tr class="h4p">
+		 <th class="w20p">&nbsp;</th>
+		 <th class="w20p"><img src="<?=$IMAGE_PATH?>dartoik.gif" alt="*" name="dart6"></th>
+		 <td>
+		  <!--a href="rd_historiaa.html"-->
+		 <a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('historia');return false;"
+										   onMouseOver="img_act('dart6');return true;"
+											onMouseOut="img_inact('dart6');return true;">
+		  <span class="txtbold txtblue">Historiaa </span></a>&nbsp;
+		 <span class="font70 txtgreen">(History)</span>
+		 </td></tr>
+	<tr class="h2p">
+		 <th class="w20p">&nbsp;</th>
+		 <th class="w20p">&nbsp;</th><!--img src="<?=$IMAGE_PATH?>dartoik.gif" alt="*" name="dart7"></th-->
+		 <td>&nbsp;</td></tr>
+	<tr class="h4p">
+		 <th class="w20p">&nbsp;</th>
+		 <th class="w20p"><img src="<?=$IMAGE_PATH?>dartoik.gif" alt="*" name="dart8"></th>
+		 <td>
+		  <a href="mailto:asko.hentunen(at)kolumbus.fi" onMouseOver="img_act('dart8');return true;" onMouseOut="img_inact('dart8');return true;">
+		  <span class="txtbold txtblue font80">Puheenjohtaja </span></a>&nbsp;
+		 <span class="font70 txtgreen">(Chairman)</span>
+		 </td></tr>
+	<tr class="h4p">
+		 <th class="w20p">&nbsp;</th>
+		 <th class="w20p"><img src="<?=$IMAGE_PATH?>dartoik.gif" alt="*" name="dart9"></th>
+		 <td>
+		  <a href="mailto:asko.hentunen(at)kolumbus.fi,himmonen(at)welho.com" onMouseOver="img_act('dart9');return true;" onMouseOut="img_inact('dart9');return true;">
+		  <span class="txtbold txtblue font80">Lisätietoja</span></a>&nbsp;
+		 <span class="font70 txtgreen">(More Information)</span>
+		 </td></tr>
+	<tr class="h2p">
+		 <th class="w20p">&nbsp;</th>
+		 <th class="w20p">&nbsp;</th><!--img src="<?=$IMAGE_PATH?>dartoik.gif" alt="*" name="dart10"></th-->
+		 <td>&nbsp;</td></tr>
+	<tr class="h4p">
+		 <th class="w20p">&nbsp;</th>
+		 <th class="w20p"><img src="<?=$IMAGE_PATH?>dartoik.gif" alt="*" name="dart11"></th>
+		 <td>
+			 <span class="font80">
+			 	<a href="http://www.darts.fi/" target="_blank" 
+			 		onMouseOver="img_act('dart11');return true;" onMouseOut="img_inact('dart11');return true;" 
+			 		title="Suomen Darts Liitto">
+			  <span class="txtblue">SDL</span></a> |&nbsp;
+				<a href="http://www.darts.fi/page.asp?lang=en" target="_blank" 
+					onMouseOver="img_act('dart11');return true;"; onMouseOut="img_inact('dart11');return true;" 
+					title="Finnish Dart Organization 
+			english pages 
+			probably out of date">
+			  <span class="txtgreen">FDO</span></a> |&nbsp;
+				<a href="http://sivut.sdlep.net/" target="_blank" 
+					onMouseOver="img_act('dart11');return true;" onMouseOut="img_inact('dart11');return true;" 
+					title="Suomen Darts Liitto - Eteläinen piiri">
+			  <span class="txtblue">SDLep</span></a></span>
+			</td></tr>
+	<tr class="h2p">
+		 <th class="w20p">&nbsp;</th>
+		 <th class="w20p">&nbsp;</th><!--img src="<?=$IMAGE_PATH?>dartoik.gif" alt="*" name="dart12"></th-->
+		 <td>&nbsp;</td></tr>
+	</table>
+ </td>
+</tr>
+</table>
+<br>
+<!-- index page lower part -->
+<table class="horcenter w90p h200 b1">
+<tr>
+<th class="w50p h100p">
+ <a href="https://www.raflaamo.fi/fi/helsinki/angleterre" target="_blank" title="Oluthuone Angleterre">
+ <img class="logoAnkku" src="<?=$IMAGE_PATH?>logo_angleterre.gif" alt="Oluthuone Angleterre">
+ </a><br />
+Fredrikinkatu 47, Helsinki, puh. 010 766 3580
+<th class="">
+ <a href="http://pubpilvenhattara.fi" target="_blank" title="Pub Pilvenhattara">
+ <img class="logoPilvi" src="<?=$IMAGE_PATH?>logo_pilvenhattara.png" alt="Pilvenhattara">
+ </a><br />
+Tuusantie 3, Nummela, puh. 09 224 5289
+</th>
+</tr></table>
+</div>
+<div><?=$msg?></div>
+<br><br><br><br><br><hr>
+<div class="txtsilver">
+SEARCH WORDS:<br>
+<h1>Richard's Dart</h1>
+<h2>darts</h2>
+<h2>tikkakerho</h2>
+<h2>viikkokisat</h2>
+</div>
+</body>
+</html>
+<?php return ?>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rikun kilpailutuloksia</title>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="description" content="Richard's Dart" />
+
+<link rel="stylesheet"    href="<?=$CSS_PATH?><?=$CSS_FILE?>" type="text/css" />
+<link rel="shortcut icon" href="favicon.ico" />
+
+<script type="text/javascript" src="<?=$JS_PATH?><?=$JS_FILE?>"></script>
+</head>
+
+<body class="bgimage">
+<!--            -->
+<!-- NAVIGATION -->
+<!--            -->
+<div class="w100p txtcenter">
+<img class="logoRtxt" src="<?=$IMAGE_PATH?>text_richards.gif" alt="Richard's Dart">
+<nav>
+<table class="w60p horcenter fixtable">
+<colgroup><col class="w20p"><col class="w20p"><col class="w20p"><col class="w20p"><col class="w20p"></colgroup>
+<tr>
+<th class="navi b1" onClick="javascript:nextPage('index');return false;">Etusivu</th> 
+<th class="navi b1" onClick="javascript:nextPage('kalenteri');return false;">Kalenteri</th>  
+<th class="navi b1" onClick="javascript:nextPage('liiga');return false;">SM-liiga</th>
+<th class="navi b1" onClick="javascript:nextPage('piiri');return false;">Piirisarja</th>
+<!--th class="navi b1" onClick="javascript:nextPage('tulos');return false;">Tuloksia</th-->
+<th class="navi b1" onClick="javascript:nextPage('historia');return false;">Historia</th></tr>
+</table></nav>
+<form name="page" id="page" action="<?=$PROTOCOL_HOST?><?=$PROG_NAME?>" method="POST">
+<input type="hidden" name="next" id="next" />
+<input type="hidden" name="team" id="team" />
+<input type="hidden" name="round" id="round" />
+<!--div><?=$debugs?></div-->
+</form>
+<br><br>
+</div>
+<!--            -->
+<!--  CONTENTS  -->
+<!--            -->
+<div class="w100p txtcenter"> 
+<span class="font200 txtgreen txtbold">Tuloksia</span>
+
+<br><br>
+<table class="horcenter w75p fixtable bcollapse">
+<tr>
+	<td class="w50p aligntop b1"><!-- LEFT SIDE -- NATIONAL & REGIONAL -->
+		<table class="w100p fixtable m5">
+		<tr><th class="h50">&nbsp;</th></tr>
+		<tr>
+			<td class="h30 txtleft">
+				<ul class="verzeroed"><li class="alignmid">
+					<span class="txtbold keepblue">
+						<a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('liiga');return false;">Riku SM-liigassa</a></span></li></ul></td></tr>
+		<tr><th class="h25">&nbsp;</th></tr>
+		<tr>
+			<td class=" h30 txtleft">
+				<ul class="verzeroed"><li class="alignmid">
+					<span class="txtbold keepblue">
+						<a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('piiri');return false;">Riku piirisarjassa</a></span></li></ul></td></tr>
+		<tr><th class="h25">&nbsp;</th></tr>
+		<tr><th class="h25">&nbsp;</th></tr>
+		<tr>
+			<td class="h30 txtleft">
+				<ul class="verzeroed"><li class="alignmid">
+					<span class="txtbold keepblue">
+						<a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('historia');return false;">SM-Mitalit</a></span>
+					<span class="font70"> Historia-sivun alaosassa</span></li></ul></td></tr>
+
+		</table>
+	</td>
+	<td class="w50p aligntop b1"><!-- RIGHT SIDE -- TEAMS -->
+		<table class="w100p fixtable m5">
+		<tr><th class="h50">&nbsp;</th></tr>
+		<tr>
+			<td class="h30 txtleft">
+				<ul class="verzeroed"><li class="alignmid">
+					<span class="txtblue keepblue txtbold">
+						<a href="<?=$PDF_PATH?>mestaruuskisat_mitalistit.pdf" 
+							target="_blank">Rikun mestaruuskisojen mitalistit</a></span></li></ul></td></tr>
+		<tr><td class="h5">&nbsp;</td></tr>
+		<tr>
+			<td class="h30 txtleft">
+				<ul class="vercenter"><li class="alignmid">
+					<span class="txtblue keepblue txtbold">
+						<a href="<?=$PDF_PATH?>30-vuotiskisat.pdf" 
+							target="_blank">Rikun 30-vuotiskisat</a></span>
+					<span class="font70"> 10.12.2005</span></li></ul></td></tr>
+		<tr>
+			<td class="h30 txtleft">
+				<ul class="vercenter"><li class="alignmid">
+					<span class="txtblue keepblue txtbold">
+						<a href="<?=$PDF_PATH?>ankku_25-vuotiskisat.pdf" 
+							target="_blank">Ankun 25-vuotiskisat</a></span>
+					<span class="font70"> 27.1.2001</span></li></ul></td></tr>
+		<tr><td class="h5">&nbsp;</td></tr>
+		<tr>
+			<td class="h30 txtleft">
+				<ul class="vercenter"><li class="alignmid">
+					<span class="txtblue keepblue txtbold">
+						<a href="<?=$PDF_PATH?>Darts_24h.pdf" 
+							target="_blank">24 h marathon</a></span>
+					<span class="font70"> (pdf) 6. -7.12.1990</span></li></ul></td></tr>
+		<tr><td class="h25">&nbsp;</td></tr>
+			<!--td></td>
+			<td></td>
+			<td></td>
+			<td></td></tr-->
+		</table>
+	</td>
+</tr>
+</table>
+</div>
+
+<br><br>
+<!--               -->
+<!--  PAGE BOTTOM  -->
+<!--               -->
+<div class="txtcenter">
+<a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('index');return false;" title="Rikun etusivulle">
+ <img class="dartsLeft" src="<?=$DARTS_LEFT?>" alt="Rikun etusivulle" /></a>
+</div>
+<br>
+<div><?=$msg?></div>
+</body>
+</html>
+<?php return ?>

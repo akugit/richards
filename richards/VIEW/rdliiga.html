@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Riku SM-liigassa</title>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="description" content="Richard's Dart" />
+
+<link rel="stylesheet"    href="<?=$CSS_PATH?><?=$CSS_FILE?>" type="text/css" />
+<link rel="shortcut icon" href="favicon.ico" />
+
+<script type="text/javascript" src="<?=$JS_PATH?><?=$JS_FILE?>"></script>
+</head>
+
+<body class="bgimage">
+<!--            -->
+<!-- NAVIGATION -->
+<!--            -->
+<div class="w100p txtcenter">
+<img class="logoRtxt" src="<?=$IMAGE_PATH?>text_richards.gif" alt="Richard's Dart">
+<nav>
+<table class="w60p horcenter fixtable">
+<colgroup><col class="w20p"><col class="w20p"><col class="w20p"><col class="w20p"><col class="w20p"></colgroup>
+<tr>
+<th class="navi b1" onClick="javascript:nextPage('index');return false;">Etusivu</th> 
+<th class="navi b1" onClick="javascript:nextPage('kalenteri');return false;">Kalenteri</th>  
+<!--th class="navi b1" onClick="javascript:nextPage('liiga');return false;">SM-liiga</th-->
+<th class="navi b1" onClick="javascript:nextPage('piiri');return false;">Piirisarja</th>
+<th class="navi b1" onClick="javascript:nextPage('tulos');return false;">Tuloksia</th>
+<th class="navi b1" onClick="javascript:nextPage('historia');return false;">Historia</th></tr>
+</table></nav>
+<form name="page" id="page" action="<?=$PROTOCOL_HOST?><?=$PROG_NAME?>" method="POST">
+<input type="hidden" name="next" id="next" />
+<input type="hidden" name="team" id="team" />
+<input type="hidden" name="round" id="round" />
+<!--div><?=$debugs?></div-->
+</form>
+<br><br>
+</div>
+<!--            -->
+<!--  CONTENTS  -->
+<!--            -->
+<div class="w100p txtcenter">
+<span class="font200 txtgreen txtbold">Riku SM-liigassa</span>
+<!--span class="font200 txtblue txtbold">2016 - </span>
+<span class="font200 txtblue txtbold">2017</span-->
+<br><br>
+<table class="horcenter w75p fixtable bcollapse">
+<tr>
+	<td class="w25p aligntop"><!-- LEFT SIDE -- COMMON LINKS -->
+		<table class="w100p fixtable m5 b1">
+		<tr><th class="h50">&nbsp;</th></tr>
+		<tr>
+			<td class="txtleft">
+				<ul>
+					<li class="h30"><span class="txtbold keepblue">
+						<a href="http://www.darts.fi/docs/File/Yleista/Saannot/smliiga_saannot.pdf" target="_blank">Liigan s&auml;&auml;nn&ouml;t</a></span></li>					
+					<li class="h30"><span class="txtbold keepblue">
+						<a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('lomake');return false;">Lomakkeita kotiotteluihin</a></span></li>	
+				</ul>
+			</td></tr>
+		<tr><th class="h30">&nbsp;</th></tr>
+		<tr>
+			<td class="txtleft">
+				<ul>
+					<li class="h30"><span class="txtbold keepblue">
+						<a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('tulos');return false;">Kauden tilanne</a></span></li>
+					<li class="h30"><span class="txtbold keepblue">
+						<a href="<?=$VERSION_PATH?><?=$PDF_PATH?>rdliiga_lopputilanne.pdf" target="_blank">Lopputilanne</span></a></span></li>
+					<li class="h30"><span class="txtbold keepblue">
+						<a href="<?=$VERSION_PATH?><?=$PDF_PATH?>rdliiga_tehotilasto.pdf" target="_blank">Tehotilasto</span></a></span></li>
+				</ul>
+			</td></tr>		
+		<tr><th class="h30">&nbsp;</th></tr>
+		<tr>
+			<td class="txtleft">
+				<ul>
+					<li class="h30"><span class="txtbold keepblue">
+						<a href="http://www.darts.fi/docs/File/SM-Liiga/yhteystiedot/liiga_paikat.pdf" target="_blank">Heittopaikat</a></span></li>
+					<li class="h30"><span class="txtbold keepblue">
+						<a href="http://www.darts.fi/docs/File/SM-Liiga/yhteystiedot/liiga_yhteyshenkilot.pdf" target="_blank">Yhteyshenkil&ouml;t</a></span></li>
+					<li class="h30"><span class="txtbold keepblue">
+						<a href="http://www.hsl.fi" target="_blank">Reittiopas</a></span></li>
+				</ul>
+			</td></tr>		
+		</table>
+	</td>
+	<td class="w75p aligntop"><!-- RIGHT SIDE -- TEAMS -->
+		<table class="w100p fixtable m5">
+		<colgroup><col class="w25p"><col class="w25p"><col class="w25p"><col class="w25p"></colgroup>
+		<tr>
+			<th class="h50"><span class="txtgreen txtbold">&nbsp;&nbsp;&nbsp;miehet 1</span></th>
+			<th class="h50"><span class="txtgreen txtbold">&nbsp;&nbsp;&nbsp;miehet 2</span></th>
+			<th class="h50"><span class="txtgreen txtbold">&nbsp;&nbsp;&nbsp;miehet 3</span></th>
+			<th class="h50"><span class="txtgreen txtbold">&nbsp;&nbsp;&nbsp;naiset</span></th></tr>
+		<tr>
+			<td><ul><li><a href="<?=$VERSION_PATH?><?=$PDF_PATH?>rd1liiga_2015-16.pdf" target="_blank"><span class="txtblue keepblue txtbold">2015-2016</span><a></li></ul> </td>
+			<td><ul><li><a href="<?=$VERSION_PATH?><?=$PDF_PATH?>rd2liiga_2015-16.pdf" target="_blank"><span class="txtblue keepblue txtbold">2015-2016</span><a></li></ul></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td></tr>
+		<tr><td class="h10" colspan="4">&nbsp;</tr><!-- mailto separator -->
+		<tr>
+			<td class="font80">&copy; 
+				<a href="mailto:asko.hentunen(at)kolumbus.fi"><span class="txtblue keepblue">Asko</span></a></td>
+			<td class="font80">&copy; 
+				<a href="mailto:himmonen(at)welho.com"><span class="txtblue keepblue">Tepsu</span></a></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td></tr>
+		<tr><td class="h25" colspan="4">&nbsp;</tr>
+		<tr><td class="h25" colspan="4">&nbsp;</tr>
+		<tr><td colspan="4">lisää tulee jahka keritään</td></tr>
+			<!--td></td>
+			<td></td>
+			<td></td>
+			<td></td></tr-->
+		</table>
+	</td>
+</tr>
+</table>
+</div>
+
+<br><br>
+<!--               -->
+<!--  PAGE BOTTOM  -->
+<!--               -->
+<div class="txtcenter">
+<a href="<?=$PROG_NAME?>" onClick="javascript:nextPage('index');return false;" title="Rikun etusivulle">
+ <img class="dartsLeft" src="<?=$DARTS_LEFT?>" alt="Rikun etusivulle" /></a>
+</div>
+<br>
+<div><?=$msg?></div>
+</body>
+</html>
+<?php return ?>
