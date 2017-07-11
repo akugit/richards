@@ -24,7 +24,7 @@ switch( $next ) {
 	case "tulos":		{ $html = $CONFIG->VERSION_PATH . $CONFIG->HTML_PATH . "tulokset.html"; break; }
 	case "lomake":		{ $html = $CONFIG->VERSION_PATH . $CONFIG->HTML_PATH . "lomakkeet.html"; break; }
 	case "historia":	{ $html = $CONFIG->VERSION_PATH . $CONFIG->HTML_PATH . "rd_historiaa.html"; break; }
-	case "kalenteri":	{ $html = $CONFIG->VERSION_PATH . $CONFIG->HTML_PATH . "kalenteri_2016-17.html"; break; }
+	case "kalenteri":	{ $html = $CONFIG->VERSION_PATH . $CONFIG->HTML_PATH . "kalenteri_NYT.html"; break; }
 	case "prefill":	//{ $html = $CONFIG->VERSION_PATH . $CONFIG->HTML_PATH . "prefilled.html"; break; }
 	case "index":
 	default:				{ $html = $CONFIG->VERSION_PATH . $CONFIG->HTML_PATH . "richards.html"; break; }
